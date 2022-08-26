@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+
+:root {
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f8f8ff;
+  color: #000;
+}
+h1 {
+  font-size: 2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 2px solid grey;
+}
+.icon {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.icon:hover {
+  transform: rotateY(180deg);
+  color: #9d5b05;
+}
+.mobile__icon {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+.navlink ul {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid grey;
+  flex-wrap: wrap;
+}
+.menu li:hover::after {
+  width: 100%;
+}
+
+.menu li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  background-color: #9d5b05;
+  height: 2px;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu li :hover {
+  width: 100%;
+}
+
+.menu li a {
+  color: #000;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.mobile__view__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #f8f8ff;
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 7;
+}
+.close__icon {
+  font-size: 27px;
+  cursor: pointer;
+  top: 30px;
+  position: absolute;
+  z-index: 7;
+  right: 30px;
+}
+.small__screen {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navlink {
+    display: none;
+  }
+  .navlink__mobile__view {
+    display: flex;
+  }
+
+  .small__screen {
+    display: flex;
+  }
+}
+/* the banner part of the project */
+.banner_image {
+  background-image: url("./Images/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border: 1px solid;
+}
+.banner_text {
+  display: grid;
+  place-items: center;
+  padding: 10rem 0 0 6rem;
+  margin-left: 20rem;
+}
+.banner_text h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 6rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.banner_text p {
+  margin-left: 11rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #9d5b05;
+}
+.btn {
+  width: 120px;
+  padding: 0.8rem;
+  border: 1px solid #000;
+  font-weight: bold;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: #fff;
+}
+
+.btn__links {
+  color: #000;
+}
+.btn:hover .btn__links {
+  color: var(--color);
+}
+
+.btn:hover {
+  background-color: #8a7272;
+  border: none;
+}
+.term_condition {
+  display: flex;
+  justify-content: space-around;
+}
+.promises {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+.promises p {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+.promises_icons {
+  font-size: 1.5rem;
+}
+/* the main part of the project */
+.main__images {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8ff;
+}
+.main_img {
+  display: flex;
+  flex: 1;
+}
+.main_text {
+  margin: 7rem 0 3rem 3rem;
+}
+.main_text h1 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 2rem;
+}
+/* the products part of the project */
+
+.product__icons p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+.product__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 4rem;
+  column-gap: 3rem;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product__decor {
+  position: absolute;
+  background-color: transparent;
+  z-index: 4;
+  width: 100%;
+  top: 30%;
+  left: 7%;
+  width: 100%;
+}
+.product__image {
+  position: relative;
+}
+.product__decor h2 {
+  font-weight: 700;
+  color: #000;
+  font-size: 2rem;
+  display: grid;
+  place-items: left;
+  bottom: 20%;
+}
+.product__decor p {
+  font-weight: 400;
+  color: #000;
+}
+/* the bedsheet part of the project */
+.bedsheet__container {
+  background-image: url("./Images/bed.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2rem;
+  height: 70vh;
+  width: 100%;
+}
+.bedsheet__container__text {
+  width: 240px;
+  height: 200px;
+  background-color: #fff;
+  padding: 5rem;
+  position: absolute;
+  z-index: 5;
+  margin-left: 13rem;
+  margin-top: 5rem;
+}
+.bedsheet__text {
+  font-size: 15px;
+}
+.bedsheet__btn {
+  font-size: 12px;
+}
+/* the newsletter part of the project */
+.newsletter_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0;
+}
+.newsletter p {
+  margin: 0.25rem 0;
+}
+.search {
+  border: 1px solid;
+  width: 400px;
+  padding: 0.7rem 1rem;
+}
+.search__envelope {
+  padding: 0.32rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid;
+  align-items: center;
+  font-size: 2rem;
+}
+.newsletter__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* the footer */
+.footer__container {
+  display: flex;
+  background-color: #212612;
+  color: #fff;
+}
+.footer__contact {
+  margin: 2rem 3rem;
+  width: 300px;
+}
+.footer__text {
+  margin-bottom: 3rem;
+}
+.footer__text p {
+  margin: 0.5rem 0;
+}
+.footer__contact li {
+  margin: 0.5rem 0;
+}
+.footer__contact li a {
+  color: #ccc;
+  font-size: 14px;
+}
+.footer__contact li :hover {
+  color: #9d5b05;
+  border-bottom: 1px solid #808080;
+  padding: 0.25rem;
+}
+.footer__address h4 {
+  margin: 0.7rem 0;
+}
+.footer__icons {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  transition: 1s;
+}
+.footer__icons:hover {
+  transform: rotateY(180deg);
+  color: #9d5b05;
+}
+/* the toprated part of the project */
+.general__product__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2rem;
+  place-items: center;
+  width: 90%;
+  margin: auto;
+}
+.rate__product__general h1 {
+  margin: 3rem 6rem;
+  text-transform: uppercase;
+}
+.rate__product__container {
+  display: flex;
+}
+.rate__name {
+  margin-left: 1rem;
+  margin-top: 5rem;
+}
+.rate__name h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.rate__name h3 {
+  margin-top: 0.5rem;
+}
