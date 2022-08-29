@@ -399,6 +399,17 @@ h1 {
     width: 90%;
     margin: auto;
   }
+  .product__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    column-gap: 3rem;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 360px) {
   .search {
