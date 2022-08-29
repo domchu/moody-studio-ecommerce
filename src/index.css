@@ -410,6 +410,14 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
   }
+  .main__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 360px) {
   .search {
