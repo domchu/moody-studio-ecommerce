@@ -418,6 +418,17 @@ h1 {
     margin: auto;
     align-items: center;
   }
+  .bedsheet__container {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+  }
+  .banner_text {
+    display: grid;
+    place-items: center;
+    padding: 10rem 0 0 6rem;
+    margin-left: 15rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .search {
