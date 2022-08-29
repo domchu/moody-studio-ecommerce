@@ -270,6 +270,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
   padding: 4rem 0;
@@ -294,6 +295,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 /* the footer */
 .footer__container {
@@ -362,4 +364,16 @@ h1 {
 }
 .rate__name h3 {
   margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .newsletter-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+  .newsletter__search {
+    margin-top: 2rem;
+  }
 }
