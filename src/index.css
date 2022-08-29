@@ -366,7 +366,7 @@ h1 {
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .newsletter-text {
     display: flex;
     justify-content: center;
@@ -375,5 +375,15 @@ h1 {
   }
   .newsletter__search {
     margin-top: 2rem;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contact li a {
+    font-size: 20px;
+  }
+  .footer__contact p {
+    font-size: 20px;
   }
 }
