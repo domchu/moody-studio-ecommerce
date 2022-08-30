@@ -115,7 +115,6 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
-  border: 1px solid;
 }
 .banner_text {
   display: grid;
@@ -247,6 +246,7 @@ h1 {
   background-size: cover;
   margin-top: 2rem;
   height: 70vh;
+  max-width: 70vh;
   width: 100%;
 }
 .bedsheet__container__text {
@@ -433,10 +433,23 @@ h1 {
     margin-left: 15rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   .search {
     border: 1px solid;
     width: 200px;
     padding: 0.7rem 1rem;
+  }
+  .icon-name {
+    display: none;
+  }
+  .header h1 {
+    font-size: 1rem;
+  }
+  .term_condition {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
   }
 }
