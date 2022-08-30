@@ -403,6 +403,7 @@ h1 {
     margin: auto;
   }
   .product__container {
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 4rem;
@@ -411,7 +412,6 @@ h1 {
     margin: auto;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
   .main__images {
     display: flex;
@@ -452,10 +452,7 @@ h1 {
     align-items: center;
     text-align: right;
   }
-  .chair__pot {
-    /* width: 200px;
-    height: 300px; */
-  }
+
   .main_img {
     display: flex;
     justify-content: center;
@@ -464,5 +461,24 @@ h1 {
   }
   .main_text {
     margin: 1.5rem 0 3rem 3rem;
+  }
+  .product__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .product__image {
+    margin: 1rem 0;
+  }
+  .product__container {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    column-gap: 3rem;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
 }
