@@ -486,4 +486,11 @@ h1 {
     grid-template-columns: 1fr;
     place-items: center;
   }
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    place-items: center;
+  }
 }
