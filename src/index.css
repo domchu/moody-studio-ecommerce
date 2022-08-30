@@ -433,7 +433,7 @@ h1 {
     margin-left: 15rem;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .search {
     border: 1px solid;
     width: 200px;
@@ -480,5 +480,10 @@ h1 {
     margin: auto;
     justify-content: center;
     align-items: center;
+  }
+  .general__product__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
