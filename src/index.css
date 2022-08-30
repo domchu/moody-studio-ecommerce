@@ -262,6 +262,9 @@ h1 {
 .bedsheet__text {
   font-size: 15px;
 }
+.price__amount {
+  display: flex;
+}
 .bedsheet__btn {
   font-size: 12px;
 }
