@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="main__images">
       <div className="main_img">
-        <img src={Images.chair} alt="chair" />
+        <img src={Images.chair} alt="chair" className="chair__pot" />
         <div className="main_text">
           <h1>IVY VINTAGE CHAIR</h1>
           <li className="btn">
@@ -17,7 +17,7 @@ const Main = () => {
         </div>
       </div>
       <div className="main_img">
-        <img src={Images.pot} alt="pot" />
+        <img src={Images.pot} alt="pot" className="chair__pot" />
         <div className="main_text">
           <h1>LARGE TARRACOTA VASE</h1>
           <li className="btn">

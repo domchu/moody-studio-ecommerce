@@ -452,4 +452,17 @@ h1 {
     align-items: center;
     text-align: right;
   }
+  .chair__pot {
+    /* width: 200px;
+    height: 300px; */
+  }
+  .main_img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_text {
+    margin: 1.5rem 0 3rem 3rem;
+  }
 }
