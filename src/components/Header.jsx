@@ -28,7 +28,7 @@ function Header() {
           <div className="mobile__view__overlay">
             <FaRegTimesCircle
               className="close__icon"
-              color="#fff"
+              color="#ccc"
               fontSize={27}
               onClick={() => setToggleMenu(false)}
             />

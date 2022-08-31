@@ -94,6 +94,7 @@ h1 {
 }
 .small__screen {
   display: none;
+  cursor: pointer;
 }
 
 /* the banner part of the project */
@@ -427,6 +428,7 @@ h1 {
 
   .small__screen {
     display: flex;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 480px) {
@@ -500,16 +502,13 @@ h1 {
     text-align: right;
   }
   .navlink__mobile__view li a {
-    color: #f8f8ff;
+    color: #ccc;
     font-size: 1.5rem;
   }
   .navlink__mobile__view li {
     margin: 0.5rem 0;
   }
-  /* .navlink__mobile__view li:hover {
-    color: #9d5b05;
-    border-bottom: 1px solid #9d5b05;
-  } */
+
   .navlink__mobile__view li::after {
     content: "";
     display: block;
@@ -523,9 +522,10 @@ h1 {
   .navlink__mobile__view li:hover::after {
     width: 100%;
   }
-  /* .close__icon:hover{
-
-  } */
+  .close__icon:hover {
+    transform: rotateY(360deg);
+    color: #9d5b05;
+  }
   .mobile__view__overlay {
     height: 70vh;
     display: grid;
