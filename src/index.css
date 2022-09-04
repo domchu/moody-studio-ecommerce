@@ -358,23 +358,48 @@ h1 {
     margin-top: 2rem;
     flex-wrap: wrap;
   }
+  /* the banner section of the project */
   .banner_image {
     background-image: url("./Images/banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 50vh;
     width: 800px;
-    display: flex;
-    justify-content: center;
   }
   .banner_text {
     display: grid;
     place-items: center;
-    padding: 10rem 0 0 4rem;
-    /* margin-left: 10rem; */
+  }
+  .banner_text h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000;
+
+    font-weight: bold;
+  }
+  .banner_text p {
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9d5b05;
+  }
+  .btn {
+    width: 120px;
+    padding: 0.8rem;
+    border: 1px solid #000;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  .btn:hover {
+    color: #fff;
   }
 
+  /* the end of the banner section of the project */
   .footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
