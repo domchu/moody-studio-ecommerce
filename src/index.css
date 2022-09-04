@@ -224,7 +224,7 @@ h1 {
   background-size: cover;
   margin-top: 2rem;
   height: 70vh;
-  max-width: 70vh;
+  max-width: 100%;
   width: 100%;
 }
 .bedsheet__container__text {
@@ -359,11 +359,20 @@ h1 {
     flex-wrap: wrap;
   }
   .banner_image {
-    /* background-image: url("./Images/banner.png"); */
+    background-image: url("./Images/banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner_text {
+    display: grid;
+    place-items: center;
+    padding: 10rem 0 0 4rem;
+    /* margin-left: 10rem; */
   }
 
   .footer__container {
