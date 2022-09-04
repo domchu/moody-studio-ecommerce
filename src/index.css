@@ -358,6 +358,13 @@ h1 {
     margin-top: 2rem;
     flex-wrap: wrap;
   }
+  .banner_image {
+    /* background-image: url("./Images/banner.png"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
 
   .footer__container {
     display: grid;
