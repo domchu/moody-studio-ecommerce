@@ -10,16 +10,16 @@ function NavLink() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/store">Store</Link>
+            <Link to="/Product">Store</Link>
           </li>
           <li>
-            <Link to="/">Accessories</Link>
+            <Link to="/Product">Accessories</Link>
           </li>
           <li>
-            <Link to="/">Brand</Link>
+            <Link to="/TopRate">Brand</Link>
           </li>
           <li>
-            <Link to="/">Pages</Link>
+            <Link to="/Footer">Pages</Link>
           </li>
           <li>
             <Link to="/">About Us</Link>
