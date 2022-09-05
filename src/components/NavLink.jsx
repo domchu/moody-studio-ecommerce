@@ -25,10 +25,10 @@ function NavLink() {
             <Link to="/">About Us</Link>
           </li>
           <li>
-            <Link to="/">News</Link>
+            <Link to="/Newsletter">News</Link>
           </li>
           <li>
-            <Link to="/">Contact Us</Link>
+            <Link to="/Footer">Contact Us</Link>
           </li>
         </ul>
       </div>
