@@ -456,14 +456,7 @@ h1 {
     margin-left: 15rem;
   }
 }
-/* @media screen and(max-width: 786px) {
-} */
-@media screen and (max-width: 700px) {
-  /* .small__screen {
-    display: flex;
-    cursor: pointer;
-  } */
-}
+
 @media screen and (max-width: 480px) {
   .small__screen {
     display: block;
@@ -583,5 +576,15 @@ h1 {
   .close__icon:hover {
     transform: rotateY(360deg);
     color: #9d5b05;
+  }
+  .bedsheet__container__text {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    padding: 5rem;
+    position: absolute;
+    z-index: 5;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
   }
 }
