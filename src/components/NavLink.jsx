@@ -22,7 +22,7 @@ function NavLink() {
             <Link to="/Footer">Pages</Link>
           </li>
           <li>
-            <Link to="/">About Us</Link>
+            <Link to="/Terms">About Us</Link>
           </li>
           <li>
             <Link to="/Newsletter">News</Link>
