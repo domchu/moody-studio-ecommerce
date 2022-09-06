@@ -9,6 +9,8 @@ import { BsFillMoonFill, BeFillSunFill } from "react-icons/bs";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  // declaring the useState for the theme
   const [theme, setTheme] = useState("DARK");
 
   const handleButtonTheemeChange = () => {
@@ -23,15 +25,13 @@ function Header() {
         <BiUser className="icon" />
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
+        {/* the theme section of the project  */}
         <div className="app" style={theme === "DARK" ? darkStyle : lightStyle}>
-          <button
-            className="button"
-            onClick={handleButtonTheemeChange}
-          ></button>
+          <button className="button" onClick={handleButtonTheemeChange}>
+            {theme === "DARK" ? <BeFillSunFill /> : <BsFillMoonFill />}
+          </button>
         </div>
-        <button>
-          {theme === "DARK" ? <BeFillSunFill /> : <BsFillMoonFill />}
-        </button>
+        {/* the end of the dark mode*/}
       </div>
       <div className="small__screen">
         <BiMenu
