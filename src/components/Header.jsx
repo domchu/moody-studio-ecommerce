@@ -11,10 +11,10 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   // declaring the useState for the theme
-  const [theme, setTheme] = useState("DARK");
+  const [theme, setTheme] = useState("Light");
 
   const handleButtonTheemeChange = () => {
-    setTheme(theme === "DARK" ? "light" : "DARK");
+    setTheme(theme === "Light" ? "Dark" : "Light");
   };
 
   return (
@@ -26,12 +26,12 @@ function Header() {
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
         {/* the theme section of the project  */}
-        <div className="app" style={theme === "DARK" ? darkStyle : lightStyle}>
+        <div className="app" style={theme === "Light" ? lightStyle : darkStyle}>
           <button className="button" onClick={handleButtonTheemeChange}>
-            {theme === "DARK" ? <BsFillSunFill /> : <BsFillMoonFill />}
+            {theme === "Light" ? <BsFillMoonFill /> : <BsFillSunFill />}
           </button>
         </div>
-        {/* the end of the dark mode*/}
+        {/* the end of the Light mode*/}
       </div>
       <div className="small__screen">
         <BiMenu
