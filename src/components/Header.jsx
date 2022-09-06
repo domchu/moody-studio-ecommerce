@@ -5,6 +5,7 @@ import { BiUser, BiMenu } from "react-icons/bi";
 import { GiShoppingCart } from "react-icons/gi";
 import { BsHeart } from "react-icons/bs";
 import { FaRegTimesCircle } from "react-icons/fa";
+import { BsFillMoonFill, BeFillSunFill } from "react-icons/bs";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -28,7 +29,7 @@ function Header() {
             onClick={handleButtonTheemeChange}
           ></button>
         </div>
-        <button></button>
+        <button>{theme === "DARK" ? darkStyle : lightStyle}</button>
       </div>
       <div className="small__screen">
         <BiMenu
