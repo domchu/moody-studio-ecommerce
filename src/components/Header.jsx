@@ -67,4 +67,12 @@ function Header() {
   );
 }
 
+const darkStyle = {
+  backgroundColor: "black",
+  color: "white",
+};
+const LightStyle = {
+  backgroundColor: "white",
+  color: "black",
+};
 export default Header;
