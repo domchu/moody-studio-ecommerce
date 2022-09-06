@@ -22,8 +22,11 @@ function Header() {
         <BiUser className="icon" />
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
-        <div className="app">
-          <button></button>
+        <div className="app" style={theme === "DARK" ? darkStyle : lightStyle}>
+          <button
+            className="button"
+            onClick={handleButtonTheemeChange}
+          ></button>
         </div>
         <button></button>
       </div>
@@ -79,7 +82,7 @@ const darkStyle = {
   backgroundColor: "black",
   color: "white",
 };
-const LightStyle = {
+const lightStyle = {
   backgroundColor: "white",
   color: "black",
 };
