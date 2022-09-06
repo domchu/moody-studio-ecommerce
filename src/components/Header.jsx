@@ -26,7 +26,7 @@ function Header() {
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
         {/* the theme section of the project  */}
-        <div className="app" style={theme === "Light" ? lightStyle : darkStyle}>
+        <div className="app" style={theme === "Light" ? darkStyle : lightStyle}>
           <button className="button" onClick={handleButtonTheemeChange}>
             {theme === "Light" ? <BsFillMoonFill /> : <BsFillSunFill />}
           </button>
