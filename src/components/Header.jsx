@@ -29,7 +29,9 @@ function Header() {
             onClick={handleButtonTheemeChange}
           ></button>
         </div>
-        <button>{theme === "DARK" ? darkStyle : lightStyle}</button>
+        <button>
+          {theme === "DARK" ? <BeFillSunFill /> : <BsFillMoonFill />}
+        </button>
       </div>
       <div className="small__screen">
         <BiMenu
