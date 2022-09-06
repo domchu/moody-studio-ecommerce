@@ -10,6 +10,10 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [theme, setTheme] = useState("DARK");
 
+  const handleButtonTheemeChange = () => {
+    setTheme(theme === "DARK" ? "light" : "DARK");
+  };
+
   return (
     <div className="header">
       <h1>MOODY STUDIO</h1>
