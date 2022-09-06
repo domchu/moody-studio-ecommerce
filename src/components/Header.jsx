@@ -22,6 +22,10 @@ function Header() {
         <BiUser className="icon" />
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
+        <div className="app">
+          <button></button>
+        </div>
+        <button></button>
       </div>
       <div className="small__screen">
         <BiMenu
