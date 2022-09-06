@@ -8,6 +8,8 @@ import { FaRegTimesCircle } from "react-icons/fa";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [theme, setTheme] = useState("DARK");
+
   return (
     <div className="header">
       <h1>MOODY STUDIO</h1>
