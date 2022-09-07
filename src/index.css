@@ -93,12 +93,15 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .banner_text {
   display: grid;
   place-items: center;
-  padding: 10rem 0 0 6rem;
-  margin-left: 20rem;
+  /* padding: 10rem 0 0 6rem; */
+  margin-right: 15rem;
 }
 .banner_text h2 {
   font-size: 1.5rem;

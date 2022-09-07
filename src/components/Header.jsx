@@ -29,7 +29,7 @@ function Header() {
         {/* the theme section of the project  */}
         <div className="app" style={theme === "Light" ? darkStyle : lightStyle}>
           <button className="button" onClick={handleButtonTheemeChange}>
-            {theme === "Light" ? <BsFillMoonFill /> : <BsFillSunFill />}
+            {theme === "Light" ? <BsFillSunFill /> : <BsFillMoonFill />}
           </button>
         </div>
         {/* the end of the Light mode*/}
