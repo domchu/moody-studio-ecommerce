@@ -489,8 +489,7 @@ h1 {
     align-items: center;
     text-align: right;
   }
-  .banner_text {
-  }
+
   .banner_text p {
     line-height: 3rem;
     font-size: 1.7rem;
@@ -499,7 +498,8 @@ h1 {
     margin-left: 2rem;
   }
   .banner_text h2 {
-    /* margin-bottom: 0.8rem; */
+    margin-bottom: 2rem;
+    margin-left: 1rem;
   }
 
   .main_img {
@@ -594,13 +594,8 @@ h1 {
     color: #9d5b05;
   }
   .bedsheet__container__text {
-    width: 200px;
-    height: 150px;
-    background-color: #fff;
-    padding: 5rem;
-    position: absolute;
-    z-index: 5;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 4rem;
   }
 }
