@@ -108,9 +108,10 @@ h1 {
   color: #000;
   margin-bottom: 0.8rem;
   font-weight: bold;
+  margin-left: 3.5rem;
 }
 .banner_text p {
-  margin-left: 11rem;
+  margin-left: 9rem;
   line-height: 3rem;
   font-size: 2rem;
   font-weight: bold;
