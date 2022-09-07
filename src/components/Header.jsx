@@ -13,6 +13,7 @@ function Header() {
   // declaring the useState for the theme
   const [theme, setTheme] = useState("Light");
 
+  //the function is called when the handleButtonTheemeChange is click.
   const handleButtonTheemeChange = () => {
     setTheme(theme === "Light" ? "Dark" : "Light");
   };
@@ -80,7 +81,7 @@ function Header() {
     </div>
   );
 }
-
+//darkStyle and lightStyle declarative
 const darkStyle = {
   backgroundColor: "black",
   color: "white",
