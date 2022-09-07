@@ -83,7 +83,6 @@ h1 {
 }
 .small__screen {
   display: none;
-  cursor: pointer;
 }
 
 /* the banner part of the project */
@@ -554,8 +553,12 @@ h1 {
     align-items: center;
     flex-direction: column;
   }
-
-  .navlink__mobile__view li::after {
+  /* .navlink__mobile__view li :hover {
+    color: #808080;
+    cursor: pointer;
+    margin-bottom: 1px solid #ddd;
+  } */
+  .navlink__mobile__view li a::after {
     content: "";
     display: block;
     width: 0%;
@@ -563,6 +566,7 @@ h1 {
     height: 2px;
     margin: auto;
     transition: 1s;
+    color: #d90909;
   }
   .navlink__mobile__view li:hover::after {
     width: 100%;
