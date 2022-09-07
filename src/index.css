@@ -100,14 +100,12 @@ h1 {
 .banner_text {
   display: grid;
   place-items: center;
-  /* padding: 10rem 0 0 6rem; */
   margin-right: 15rem;
 }
 .banner_text h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #000;
-  /* margin-left: 6rem; */
   margin-bottom: 0.8rem;
   font-weight: bold;
 }
@@ -228,7 +226,6 @@ h1 {
   margin-top: 2rem;
   height: 70vh;
   max-width: 100%;
-  /* width: 100%; */
 }
 .bedsheet__container__text {
   width: 240px;
@@ -279,7 +276,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 /* the footer */
 .footer__container {
@@ -453,12 +449,6 @@ h1 {
     margin-bottom: 2rem;
     height: 60vh;
   }
-  /* .banner_text {
-    display: grid;
-    place-items: center;
-    padding: 10rem 0 0 6rem;
-    margin-left: 15rem;
-  } */
 }
 
 @media screen and (max-width: 480px) {
