@@ -107,7 +107,7 @@ h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #000;
-  margin-left: 6rem;
+  /* margin-left: 6rem; */
   margin-bottom: 0.8rem;
   font-weight: bold;
 }
@@ -363,6 +363,8 @@ h1 {
   }
   /* the banner section of the project */
   .banner_image {
+    background-position: right;
+    justify-content: center;
     height: 50vh;
     width: 100%;
     margin: auto;
@@ -370,8 +372,7 @@ h1 {
     margin-bottom: 2rem;
   }
   .banner_text {
-    display: grid;
-    place-items: center;
+    margin: auto;
   }
   .banner_text h2 {
     font-size: 1.5rem;
@@ -452,12 +453,12 @@ h1 {
     margin-bottom: 2rem;
     height: 60vh;
   }
-  .banner_text {
+  /* .banner_text {
     display: grid;
     place-items: center;
     padding: 10rem 0 0 6rem;
     margin-left: 15rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -487,6 +488,18 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: right;
+  }
+  .banner_text {
+  }
+  .banner_text p {
+    line-height: 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #9d5b05;
+    margin-left: 2rem;
+  }
+  .banner_text h2 {
+    /* margin-bottom: 0.8rem; */
   }
 
   .main_img {
