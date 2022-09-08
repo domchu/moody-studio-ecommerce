@@ -32,7 +32,7 @@ function Header() {
             {theme === "Light" ? <BsFillSunFill /> : <BsFillMoonFill />}
           </button>
         </div>
-        {/* the end of the Light mode*/}
+        {/* the end of the Light mode */}
       </div>
       <div className="small__screen">
         <BiMenu
