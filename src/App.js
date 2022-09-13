@@ -26,7 +26,7 @@ function App() {
       </button>
 
       <Header />
-      <NavLink />
+      <NavLink color={theme === "Dark" ? "black" : "white"} />
       <Terms />
       <Banner />
       <Main />

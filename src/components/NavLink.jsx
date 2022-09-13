@@ -1,34 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function NavLink() {
+function NavLink({ color }) {
   return (
     <div>
       <div className="navlink">
         <ul className="menu">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={{ color: color }}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/Product">Store</Link>
+            <Link to="/Product" style={{ color: color }}>
+              Store
+            </Link>
           </li>
           <li>
-            <Link to="/Product">Accessories</Link>
+            <Link to="/Product" style={{ color: color }}>
+              Accessories
+            </Link>
           </li>
           <li>
-            <Link to="/TopRate">Brand</Link>
+            <Link to="/TopRate" style={{ color: color }}>
+              Brand
+            </Link>
           </li>
           <li>
-            <Link to="/Footer">Pages</Link>
+            <Link to="/Footer" style={{ color: color }}>
+              Pages
+            </Link>
           </li>
           <li>
-            <Link to="/Terms">About Us</Link>
+            <Link to="/Terms" style={{ color: color }}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/Newsletter">News</Link>
+            <Link to="/Newsletter" style={{ color: color }}>
+              News
+            </Link>
           </li>
           <li>
-            <Link to="/Footer">Contact Us</Link>
+            <Link to="/Footer" style={{ color: color }}>
+              Contact Us
+            </Link>
           </li>
         </ul>
       </div>
