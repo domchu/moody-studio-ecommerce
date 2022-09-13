@@ -98,7 +98,7 @@ h1 {
   background-repeat: no-repeat;
   height: 70vh;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .banner_text {
