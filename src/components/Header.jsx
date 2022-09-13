@@ -5,18 +5,9 @@ import { BiUser, BiMenu } from "react-icons/bi";
 import { GiShoppingCart } from "react-icons/gi";
 import { BsHeart } from "react-icons/bs";
 import { FaRegTimesCircle } from "react-icons/fa";
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-
-  // declaring the useState for the theme
-  const [theme, setTheme] = useState("Light");
-
-  //the function is called when the handleButtonTheemeChange is click.
-  const handleButtonTheemeChange = () => {
-    setTheme(theme === "Light" ? "Dark" : "Light");
-  };
 
   return (
     <div className="header">
@@ -27,11 +18,7 @@ function Header() {
         <GiShoppingCart className="icon" />
         <BsHeart className="icon" />
         {/* the theme section of the project  */}
-        <div className="app" style={theme === "Light" ? darkStyle : lightStyle}>
-          <button className="button" onClick={handleButtonTheemeChange}>
-            {theme === "Light" ? <BsFillSunFill /> : <BsFillMoonFill />}
-          </button>
-        </div>
+
         {/* the end of the Light mode */}
       </div>
       <div className="small__screen">
@@ -82,12 +69,5 @@ function Header() {
   );
 }
 //darkStyle and lightStyle declarative
-const darkStyle = {
-  backgroundColor: "black",
-  color: "white",
-};
-const lightStyle = {
-  backgroundColor: "white",
-  color: "black",
-};
+
 export default Header;
