@@ -140,7 +140,7 @@ h1 {
 
 .btn:hover {
   background-color: #8a7272;
-  border: none;
+  border: 1px solid #8a7272;
 }
 .term_condition {
   display: flex;
@@ -198,9 +198,9 @@ h1 {
   background-color: transparent;
   z-index: 4;
   width: 100%;
-  top: 30%;
-  left: 7%;
-  width: 100%;
+  top: 0%;
+  left: 0%;
+  height: 100%;
 }
 .product__image {
   position: relative;
@@ -216,6 +216,14 @@ h1 {
 .product__decor p {
   font-weight: 400;
   color: #000;
+}
+.product__decor {
+  background-color: #21261241;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 /* the bedsheet part of the project */
 .bedsheet__container {
